@@ -4,10 +4,10 @@ Diario personal construido con ReactJS.
 
 Que puedo hacer en JournalApp.
 - Registrarme, tanto por mail como por google.
-- Gestionar mi cuenta, puedo cambiar mis datos, contraseña, ver pedidos y eliminar la cuenta.
-- Aplicar codigos de descuento.
-- Agregar productos a favoritos.
-- Agregar y Comprar productos.
+- Agregar notas con imagenes.
+- Agregar y ver mis imagenes.
+- Guardar las notas por categoria.
+- Agregar a favoritos
 
 ## Dependencias
 Estas son las dependencias que me ayudaron a completar este desafio.
