@@ -1,0 +1,244 @@
+.layout__sidebar {
+  background-color: $bg-secondary;
+  color: $white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 110;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  transition: left 0.5s ease;
+  &.active {
+    left: 0;
+  }
+}
+.icon {
+  align-items: center;
+  border-radius: 1rem;
+  display: flex;
+  font-size: 1.1rem;
+  height: 35px;
+  min-width: 35px;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.layout__main-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  li {
+    list-style: none;
+  }
+}
+.layout__collection-menu {
+  display: none;
+}
+.menu__title {
+  margin-left: 55px;
+  cursor: default;
+}
+
+.layout__navbar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  overflow: visible;
+  white-space: nowrap;
+  height: 100%;
+  padding: 5px 15px 0 15px;
+  margin: 0;
+  color: $primary;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: lighten($color: $bg-primary, $amount: 10);
+  }
+  &.active {
+    background-color: lighten($color: $bg-primary, $amount: 10);
+  }
+  p {
+    margin: 5px 0;
+    font-size: 10px;
+  }
+}
+
+.layout__header {
+  background-color: $bg-secondary;
+  color: $primary;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.layout__header-title {
+  font-size: 1.4rem;
+}
+
+.layout__header-left,
+.layout__header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.layout__header-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout__user {
+  width: 100%;
+  .layout__letter {
+    background: $bg-primary;
+    padding: 10px 15px;
+    margin-left: 5px;
+    color: $primary;
+    border-radius: 50%;
+  }
+  .layout__user-name {
+    font-size: 14px;
+    width: 85px;
+  }
+}
+
+.layout__sidebar-btn {
+  display: none;
+}
+
+/* nav */
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  display: block;
+  position: relative;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu ul {
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  right: -1000px;
+  z-index: 999;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background: lighten($color: $bg-secondary, $amount: 10);
+  width: 10em;
+}
+.nav-menu li:hover > ul {
+  right: 10px;
+  opacity: 1;
+}
+.layout__nav-item {
+  padding: 10px;
+  text-align: center;
+  &:hover {
+    background: $bg-secondary;
+  }
+  button {
+    padding: 0;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .layout__sidebar {
+    background-color: $bg-secondary;
+    color: $white;
+    position: fixed;
+    top: 0;
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 55px;
+    height: 100vh;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    &:hover {
+      width: 225px;
+    }
+    &.active {
+      width: 225px;
+    }
+  }
+  .layout__btn-note {
+    position: relative;
+    height: 50px;
+    p {
+      display: block;
+    }
+  }
+  .layout__user {
+    margin-top: 0;
+    h3 {
+      margin-top: 0;
+    }
+  }
+  .layout__sidebar-btn {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: 10px;
+  }
+  .layout__main-menu,
+  .layout__collection-menu {
+    display: block;
+    width: 100%;
+    transition: color 0.3s ease;
+    li {
+      a,
+      p {
+        text-align: start;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+  .layout__collection-menu {
+    margin-top: 25px;
+    border-top: 1px solid $secondary;
+  }
+  .layout__navbar-item {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    padding: 5px 0;
+    margin: 15px 0;
+    color: $primary;
+    transition: background-color 0.2s ease;
+
+    p {
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background-color: lighten($color: $bg-primary, $amount: 10);
+    }
+    &.active {
+      background-color: lighten($color: $bg-primary, $amount: 10);
+    }
+  }
+  .layout__header-title {
+    font-size: 1.7rem;
+  }
+}

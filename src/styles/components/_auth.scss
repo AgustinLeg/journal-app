@@ -1,0 +1,141 @@
+.auth__main {
+  min-height: 100vh;
+  background: $bg-secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.auth__box-features {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 50%;
+    height: 100vh;
+    color: $bg-primary;
+    p{
+      margin-top: 10px;
+    }
+  }
+}
+
+.auth__box-features img{
+  width: 75%;
+}
+.auth__features-title{
+  font-size: 2.5rem;
+  color: $bg-secondary;
+}
+
+.auth__box-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  @media screen and (min-width: 668px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 100px;
+    width: 50%;
+    height: 100vh;
+  }
+}
+
+.auth__box-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth__box-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  a {
+    padding: 10px 20px;
+    width: 50%;
+    text-decoration: none;
+    color: $primary;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s ease;
+    &.active {
+      border-bottom: 2px solid $primary;
+    }
+  }
+}
+
+.auth__title {
+  color: $primary;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.auth__form {
+  width: 100%;
+  margin: 20px 0;
+}
+.auth__input {
+  color: $bg-primary;
+  font-size: 1rem;
+  margin: 0 auto;
+  background-color: $primary;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  outline: none;
+}
+
+.auth__social-networks {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.auth__alert-error {
+  background: red;
+  border-radius: 5px;
+  color: $primary;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.auth__text {
+  margin-top: 30px;
+  align-items: center;
+  width: 100%;
+  color: $primary;
+  display: flex;
+  font-size: 0.875rem;
+  &:before,
+  &:after{
+    border-bottom: 1px solid $primary;
+    content: "";
+    flex: 1;
+  }
+  &:before{
+    margin-right: 0.5rem;
+  }
+  &:after{
+    margin-left: 0.5rem;
+  }
+}

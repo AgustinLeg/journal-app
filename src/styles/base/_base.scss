@@ -1,0 +1,117 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bg-personal {
+  background-color: $bg-personal;
+}
+.bg-design {
+  background-color: $bg-design;
+}
+.bg-school {
+  background-color: $bg-school;
+}
+.bg-other {
+  background-color: $bg-other;
+}
+.bg-multicolor {
+  background: $bg-multicolor;
+}
+
+.mt-1 {
+  margin-top: 5px;
+}
+.mt-2 {
+  margin-top: 10px;
+}
+.mt-5 {
+  margin-top: 20px;
+}
+.mb-1 {
+  margin-bottom: 5px;
+}
+.mb-2 {
+  margin-bottom: 10px;
+}
+.mb-5 {
+  margin-bottom: 20px;
+}
+.mr-1 {
+  margin-right: 5px;
+}
+.mr-2 {
+  margin-right: 10px;
+}
+.mr-5 {
+  margin-right: 20px;
+}
+.ml-1 {
+  margin-left: 5px;
+}
+.ml-2 {
+  margin-left: 10px;
+}
+.ml-5 {
+  margin-left: 20px;
+}
+.pointer {
+  cursor: pointer;
+}
+.remove-link{
+  text-decoration: none;
+}
+
+
+// sweetalert2 toast
+
+.colored-toast.swal2-icon-success {
+  background-color: #28a745 !important;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #dc3545 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+  background-color: #faa052 !important;
+}
+
+.colored-toast.swal2-icon-info {
+  background-color: #3fc3ee !important;
+}
+
+.colored-toast.swal2-icon-question {
+  background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+  color: white;
+}
+
+.colored-toast .swal2-close {
+  color: white;
+}
+
+.colored-toast .swal2-html-container {
+  color: white;
+}

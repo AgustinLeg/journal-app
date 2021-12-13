@@ -1,0 +1,92 @@
+.spinner__container{
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background-color 0.4s ease;
+    visibility: hidden;
+    width: 100%;
+    z-index: 10;
+    &.visible{
+        visibility: visible;
+        background-color: rgba(12, 12, 12, 0.3);
+    }
+    i{
+        font-size: 2rem;
+        color: $primary;
+    }
+}
+
+.spinner__content {
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-animation: sk-rotate 2s infinite linear;
+  animation: sk-rotate 2s infinite linear;
+}
+
+.dot1,
+.dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: $primary;
+  border-radius: 100%;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
