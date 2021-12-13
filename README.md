@@ -12,8 +12,8 @@ Que puedo hacer en JournalApp.
 ## Dependencias
 Estas son las dependencias que me ayudaron a completar este desafio.
 
-| Nombre | Uso |
-| ------ | ------ |
+| Nombre | Version | Uso |
+| ------ | ------ | ------ |
 | [ReactJS](https://reactjs.org/) | V17 | Libreria principal del proyecto |
 | [React Router DOM ](https://reactrouter.com/docs/en/v6) | V6 | Navegacion del sitio |
 | [Firebase](https://firebase.google.com/) | V9 | Base de datos |
